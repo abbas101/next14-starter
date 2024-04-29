@@ -1,4 +1,4 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {}
-
-module.exports = nextConfig
+basePath: '/next14-starter',
+    module.exports = nextConfig

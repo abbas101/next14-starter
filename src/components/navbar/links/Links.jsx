@@ -1,3 +1,6 @@
+import Link from "next/link";
+import NavLink from '@/components/navbar/links/navLink/navLink'
+import styles from "./links.module.css"
 const Links = () => {
     const links =[
         {
@@ -16,11 +19,19 @@ const Links = () => {
             title: "Blog",
             path: "/blog",
         },
+        {
+            title: "Admin",
+            path: "/admin",
+        },
+        {
+            title: "Logout",
+            path: "/logout",
+        },
     ];
     return (
-        <div>
+        <div className={styles.links}>
            {links.map((link =>(
-            <Link href={link.path}>{link.title}</Link>
+            <NavLink item={link} key={link.title}/>
            ) ))} 
         </div>
     )
