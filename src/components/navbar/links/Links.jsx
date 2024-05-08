@@ -4,7 +4,7 @@ import styles from "./links.module.css"
 const Links = () => {
     const links =[
         {
-            title: "Homepage",
+            title: "Home",
             path: "/",
         },
         {
